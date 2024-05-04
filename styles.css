@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    flex-basis: 60%;
 }
 
 .mainWrapper .leftContainer {
@@ -99,4 +99,15 @@ input[type="text"] {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .mainWrapper{
+        flex-direction: column;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+
 }
