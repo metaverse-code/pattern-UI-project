@@ -32,7 +32,7 @@ $(document).ready(function () {
             $('.showStatus:first').css("display", "none");
             $('#firstName').val('');
             $('#lastName').val('');
-
+            $('#submitButton').addClass("disabled");
             $('#firstCharDisplay').text("F");
             $('#lastCharDisplay').text("L");
 
