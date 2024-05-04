@@ -29,12 +29,15 @@ $(document).ready(function () {
 
         if (firstName && lastName) {
             var fullName = firstName + ' ' + lastName;
-        $('.showStatus:first').css("display","none");
-        $('#firstName').val('');
-        $('#lastName').val('');
+            $('.showStatus:first').css("display", "none");
+            $('#firstName').val('');
+            $('#lastName').val('');
 
-        var newDiv = $('<div class="showStatus">' + fullName + '</div>');
-        $('.showStatus:last').after(newDiv);
+            $('#firstCharDisplay').text("F");
+            $('#lastCharDisplay').text("L");
+
+            var newDiv = $('<div class="showStatus">' + fullName + '</div>');
+            $('.showStatus:last').after(newDiv);
         } else {
             alert("All fields are required")
         }
