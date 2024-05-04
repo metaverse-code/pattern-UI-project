@@ -10,26 +10,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 60%;
+    width: 70%;
 }
 
 .mainWrapper .leftContainer {
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    border: 150px solid #959595;
+    border: 300px solid #959595;
     box-sizing: border-box;
     border-top-color: #4f4f4f;
     border-right-color: #4f4f4f;
 }
 
 .mainWrapper .rightContainer {
-    flex-basis: 30%;
-    height: 300px;
+    flex-basis: 40%;
+    height: 600px;
     background-color: #ddd;
 }
 
@@ -42,9 +42,9 @@ form,
     font-size: 11px;
     box-shadow: 3px 3px 4px rgb(143 143 143 / 30%);
     color: #7c7c7c;
-    font-style: italic;
+    font-style: italic;display: flex;
+    flex-direction: column;
 }
-
 
 input[type="text"] {
     outline: none;
@@ -83,8 +83,8 @@ input[type="text"] {
 }
 
 .innerContainer {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     position: absolute;
     font-size: 30px;
     color: #fff;
@@ -101,13 +101,7 @@ input[type="text"] {
     left: 0;
 }
 
-
-@media only screen and (max-width: 767px) {
-    .mainWrapper{
-        flex-direction: column;
-    }
-    input[type="text"] {
-        width: 100%;
-    }
-
+.userListWrapper {
+    height: calc(600px - 225px);
+    overflow-y: auto;
 }

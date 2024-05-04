@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         if (!firstName) {
             $('#firstCharDisplay').text("F");
-        } 
+        }
 
     });
 
@@ -17,7 +17,7 @@ $(document).ready(function () {
         var lastChar = lastName.charAt(0).toUpperCase();
         $('#lastCharDisplay').text(lastChar);
 
-        if(!lastName) {
+        if (!lastName) {
             $('#lastCharDisplay').text("L");
         }
     });
@@ -29,8 +29,13 @@ $(document).ready(function () {
 
         if (firstName && lastName) {
             var fullName = firstName + ' ' + lastName;
-            $('.showStatus').text(fullName);
-        }else {
+        $('.showStatus:first').css("display","none");
+        $('#firstName').val('');
+        $('#lastName').val('');
+
+        var newDiv = $('<div class="showStatus">' + fullName + '</div>');
+        $('.showStatus:last').after(newDiv);
+        } else {
             alert("All fields are required")
         }
 
