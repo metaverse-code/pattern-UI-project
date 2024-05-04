@@ -4,13 +4,16 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .mainWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 85%;
 }
 
 .mainWrapper .leftContainer {
@@ -33,16 +36,24 @@ body {
     background-color: #ddd;
 }
 
-form,
-.showStatus {
+.showStatus{
+    margin: 12px 25px !important;
+    padding: 18px 20px;
+}
+
+form{
+    padding: 25px 20px;
+}
+
+form, .showStatus {
     background-color: #fff;
-    padding: 15px;
     border-radius: 6px;
-    margin: 17px 13px;
-    font-size: 11px;
+    margin: 26px 25px;
+    font-size: 13px;
     box-shadow: 3px 3px 4px rgb(143 143 143 / 30%);
     color: #7c7c7c;
-    font-style: italic;display: flex;
+    font-style: italic;
+    display: flex;
     flex-direction: column;
 }
 
@@ -50,7 +61,7 @@ input[type="text"] {
     outline: none;
     border: none;
     border-bottom: 1px solid #aeaeae;
-    padding: 15px 3px 2px 3px;
+    padding:18px 10px 5px 3px;
     margin-bottom: 10px;
 }
 
@@ -64,10 +75,11 @@ input[type="text"] {
     border: none;
     background: #156cd0;
     border-radius: 3px;
-    padding: 10px;
+    padding: 12px 10px;
     color: #fff;
     transition: 0.3s all ease-in-out;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 #submitButton:hover {
@@ -75,7 +87,7 @@ input[type="text"] {
 }
 
 .userlistCont>p {
-    padding: 12px 0 0 20px;
+    padding: 12px 0 0 28px;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 13px;
@@ -102,6 +114,6 @@ input[type="text"] {
 }
 
 .userListWrapper {
-    height: calc(600px - 225px);
+    height: calc(600px - 288px);
     overflow-y: auto;
 }
