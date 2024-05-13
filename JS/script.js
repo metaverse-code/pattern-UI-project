@@ -57,7 +57,7 @@ $(document).ready(function () {
 
 
 
-        var firstName = $('#firstName').val();
+        var firstName = $('#firstName ').val();
         var lastName = $('#lastName').val();
 
         if (firstName && lastName) {

@@ -31,7 +31,7 @@ body {
 }
 
 .mainWrapper .rightContainer {
-    flex-basis: 40%;
+    flex-basis:40%;
     height: 600px;
     background-color: #ddd;
 }
